@@ -1,6 +1,7 @@
 :root {
-    --white-color:#c2d5ff;
+    --white-color: rgb(197, 241, 255);
     --second-color:#ffffff;
+    
 }
 body {
     display: flex;
@@ -26,7 +27,7 @@ ul {
 
 
 header {
-    margin-top: 8%;
+    margin-top: 15%;
     margin-left: 5%;
     font-size: x-large;
 }
@@ -37,11 +38,12 @@ form {
 }
 
 .img {
+    position: relative;
     display: block;
-    background-image: url('/Pictures/halie-west-25xggax4bSA-unsplash.jpg');
+    background-image: url('../Pictures/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
-    width: 50vh;
-    height: 100vh;
+    width: 30%;
+    height: 100%;
     text-align: center;
 }
 
@@ -54,4 +56,59 @@ form {
     display: flex;
     gap: 80px;
     margin-top: 1rem;
+}
+
+
+
+.img .focus {
+    position: absolute;
+    margin-top: 30%;
+    width: 650px; 
+    max-width: 100%;
+    height : clamp(10vh, 20vh, 30vh); 
+    background-color: black;
+    opacity: 60%;
+    overflow: hidden; 
+    text-align: center;
+}
+
+
+h1 {
+   color: var(--white-color); 
+   font-size: 5rem;
+   
+}
+
+hr {
+    height: 10px;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    margin: 0 0; 
+}
+
+.createAccount {
+    width: 15rem;
+    height: 4rem;
+    margin-top: 2%;
+
+    color: #ffffff;
+    background-color: darkgreen;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+footer {
+    margin-left: 3%;
+}
+
+footer .signUp {
+    margin-top: 2%;
+    font-size: larger;
+}
+
+footer .signUp a {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkgreen;
 }
