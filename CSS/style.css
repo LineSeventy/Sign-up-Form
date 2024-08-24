@@ -136,3 +136,8 @@ input:focus:invalid {
 a{
     color: white;
 }
+.focus {
+   display: flex;
+   justify-content: center;
+   
+}
