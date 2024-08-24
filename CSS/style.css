@@ -1,5 +1,5 @@
 :root {
-    --white-color: rgb(197, 241, 255);
+    --white-color: #E5E7EB;
     --second-color:#ffffff;
     
 }
@@ -109,6 +109,30 @@ footer .signUp {
 
 footer .signUp a {
     text-decoration: none;
-    font-weight: bold;
-    color: darkgreen;
+    color: #596D48;
+}
+
+input {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+span {
+    color: red;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+input.interacted:invalid {
+    border-color: red;
+}
+input:focus:invalid {
+    border-color: blue;
+}
+a{
+    color: white;
 }
